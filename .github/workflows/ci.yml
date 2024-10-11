@@ -1,6 +1,8 @@
 name: abc
 on:
   push
+permissions:
+  packages: write
 jobs:
   job1:
     runs-on: ubuntu-latest
