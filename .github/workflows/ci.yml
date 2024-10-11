@@ -13,7 +13,7 @@ jobs:
         ls -larth
         docker build -t ghcr.io/myfirstimage:v1.0.0 .
         docker images
-        docker run --name ghcr.io/myfirstimage123 myfirstimage:v1.0.0
+        docker run --name myfirstimage123 ghcr.io/myfirstimage:v1.0.0
 
     - uses: docker/login-action@v3
       with:
