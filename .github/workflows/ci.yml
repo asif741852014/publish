@@ -11,7 +11,12 @@ jobs:
         docker --version
         docker images
         ls -larth
-        docker build -t myfirstimage:v1.0.0 .
+        docker build -t ghcr.io/myfirstimage:v1.0.0 .
         docker images
         docker run --name myfirstimage123 myfirstimage:v1.0.0
 
+    - uses: docker/login-action@v3
+      with:
+        registry: ghcr.io
+        username: asif741852014
+        password: ${{ secrets.GITHUB_TOKEN }}
