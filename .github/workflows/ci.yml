@@ -20,4 +20,4 @@ jobs:
         registry: ghcr.io
         username: asif741852014
         password: ${{ secrets.GITHUB_TOKEN }}
-    - run: docker push ghcr.io//myfirstimage:v1.0.0
+    - run: docker push ghcr.io/myfirstimage:v1.0.0
