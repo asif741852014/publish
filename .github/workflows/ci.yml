@@ -13,4 +13,5 @@ jobs:
         ls -larth
         docker build -t myfirstimage:v1.0.0 .
         docker images
+        docker run --name myfirstimage123 myfirstimage:v1.0.0
 
